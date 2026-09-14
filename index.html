@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV Александра Алексейчика, Fullstack AI developer">
     <link rel="stylesheet" href="style.css">
-    <title>Alexander Alexeichik CV</title>
+    <title>Александр Алексейчик — CV</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page-container">
+      <header class="hero">
+        <div class="hero__photo-column">
+          <div class="hero__portrait">
+            <img
+              class="hero__avatar"
+              src="assets/avatar.png"
+              alt="Александр Алексейчик"
+              width="240"
+              height="240"
+            >
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow">Curriculum Vitae</p>
+          <h1>Александр<br>Алексейчик</h1>
+          <p class="hero__role">Fullstack AI developer</p>
+          <nav class="navigation" aria-label="Навигация по резюме">
+            <ul class="navigation__list">
+              <li><a href="#about">Обо мне</a></li>
+              <li><a href="#skills">Навыки</a></li>
+              <li><a href="#code">Код</a></li>
+              <li><a href="#projects">Проекты</a></li>
+              <li><a href="#education">Образование</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="content">
+        <aside class="sidebar" aria-label="Контактная информация и навыки">
+          <section class="section section--sidebar" id="contacts">
+            <h2>Контакты</h2>
+            <ul class="contact-list">
+              <li>
+                <span>Telegram</span>
+                <a href="https://t.me/ghbuyb">@ghbuyb</a>
+              </li>
+              <li>
+                <span>Discord</span>
+                <span>alexandr_alxck</span>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a href="https://github.com/alexander-alxck">alexander-alxck</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="section section--sidebar" id="skills">
+            <h2>Навыки</h2>
+            <ul class="skill-list">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Git</li>
+              <li>Codex</li>
+              <li>Visual Studio Code</li>
+              <li>Scrum</li>
+            </ul>
+          </section>
+
+          <section class="section section--sidebar" id="english">
+            <h2>Английский</h2>
+            <p class="language-level">B2</p>
+            <p>Upper-Intermediate</p>
+          </section>
+        </aside>
+
+        <div class="main-column">
+          <section class="section" id="about">
+            <h2>Обо мне</h2>
+            <p>
+              Развиваюсь в AI-разработке и создании современных веб-приложений.
+              Ориентирован на результат, командную работу и постоянное профессиональное развитие.
+              Ценю обмен знаниями, конструктивную обратную связь и ответственный подход к задачам.
+            </p>
+            <p>
+              Моя цель — вырасти до уровня Senior Engineer: самостоятельно планировать
+              и реализовывать функциональность, декомпозировать сложные задачи, принимать
+              технические решения с учётом целей продукта и поддерживаемости кода.
+              Стремлюсь развивать навыки code review и менторства, помогать команде
+              повышать качество разработки и сокращать технический долг.
+            </p>
+          </section>
+
+          <section class="section" id="code">
+            <h2>Пример кода</h2>
+            <p>Функция разбивает строку на пары символов и дополняет нечётную пару символом подчёркивания.</p>
+            <pre><code>function splitString(str) {
+  const result = [];
+
+  for (let index = 0; index &lt; str.length; index += 2) {
+    const pair = str.slice(index, index + 2);
+    result.push(pair.padEnd(2, '_'));
+  }
+
+  return result;
+}</code></pre>
+          </section>
+
+          <section class="section" id="projects">
+            <h2>Проекты</h2>
+            <article class="timeline-item">
+              <p class="timeline-item__meta">Учебный проект</p>
+              <h3>RSSchool CV</h3>
+              <p>Резюме в форматах Markdown и HTML, созданное в рамках курса RS School.</p>
+              <a href="https://github.com/alexander-alxck/rsschool-cv">Открыть на GitHub</a>
+            </article>
+          </section>
+
+          <section class="section" id="education">
+            <h2>Образование</h2>
+            <article class="timeline-item">
+              <p class="timeline-item__meta">2026 — настоящее время</p>
+              <h3>RS School</h3>
+              <p>Курс JavaScript/Front-end, обучение продолжается.</p>
+            </article>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <a class="footer__github" href="https://github.com/alexander-alxck">GitHub</a>
+        <span>&copy; 2026 Александр Алексейчик</span>
+        <a class="footer__course" href="https://rs.school/courses/javascript" aria-label="Курс JavaScript/Front-end в RS School">
+          <img src="assets/rs-school-logo.svg" alt="RS School" width="100" height="37">
+        </a>
+      </footer>
+    </div>
+  </body>
 </html>
