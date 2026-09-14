@@ -2,7 +2,7 @@
 
 ## Контактная информация
 
-Telegram: https://t.me/ghbuyb, discord: alexandr_alxck 
+Telegram: [@ghbuyb](https://t.me/ghbuyb), discord: alexandr_alxck 
 
 ## Краткая информация о себе (ваши цели и приоритеты, подчеркните сильные стороны, опишите опыт работы, если он есть, или желание учиться и приобретать новые навыки)
 
